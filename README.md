@@ -2,11 +2,14 @@
 
 > TypeScript SDK to build Soapbox Minis.
 
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![bundlephobia](https://img.shields.io/bundlephobia/minzip/@soapboxsocial/minis.js)](https://bundlephobia.com/result?p=@soapboxsocial/minis.js@1.0.0)
+
 ## Table of Contents
 
--   [Install](#install)
--   [API](#api)
--   [License](#license)
+- [Install](#install)
+- [API](#api)
+- [License](#license)
 
 ## Install
 
@@ -20,7 +23,7 @@ OR
 $ yarn add @soapboxsocial/minis.js
 ```
 
-* * *
+---
 
 ## API
 
@@ -28,27 +31,27 @@ $ yarn add @soapboxsocial/minis.js
 
 #### Table of Contents
 
--   [getUser](#getuser)
--   [getMembers](#getmembers)
--   [getRoom](#getroom)
+- [getUser](#getuser)
+- [getMembers](#getmembers)
+- [getRoom](#getroom)
 
 ### getUser
 
 Get the current user of the Mini
 
-Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;User>** 
+Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;User>**
 
 ### getMembers
 
 Get all of the users in a Soapbox room
 
-Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;User>>** 
+Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;User>>**
 
 ### getRoom
 
 Get the details of the Soapbox room
 
-Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;Room>** 
+Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;Room>**
 
 ## License
 

@@ -10,6 +10,7 @@
 
 - [Install](#install)
 - [API](#api)
+- [Building A Mini](#building-a-mini)
 - [License](#license)
 
 ## Install
@@ -53,6 +54,10 @@ Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 Get the details of the Soapbox room
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;Room>**
+
+## Building a Mini
+
+If you want to build your own Soapbox Mini or have an idea that you'd like to run past us, [send us an email](mailto:support@soapbox.social).
 
 ## License
 

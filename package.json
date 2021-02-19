@@ -31,7 +31,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "minis.js",
+  "name": "@soapboxsocial/minis.js",
   "author": "@SoapboxSocial",
   "module": "dist/minis.js.esm.js",
   "size-limit": [

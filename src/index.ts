@@ -44,7 +44,7 @@ type GetUserEvent = {
  * @name getUser
  * @returns {Promise<User>}
  */
-export async function getUser() {
+export function getUser() {
   return new Promise<User>(resolve => {
     const sequence = Date.now();
 
@@ -72,7 +72,7 @@ type GetMembersEvent = {
  * @name getMembers
  * @returns {Promise<User[]>}
  */
-export async function getMembers() {
+export function getMembers() {
   return new Promise<User[]>(resolve => {
     const sequence = Date.now();
 
@@ -100,7 +100,7 @@ type GetRoomEvent = {
  * @name getRoom
  * @returns {Promise<Room>}
  */
-export async function getRoom() {
+export function getRoom() {
   return new Promise<Room>(resolve => {
     const sequence = Date.now();
 

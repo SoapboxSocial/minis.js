@@ -20,7 +20,8 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "docs": "documentation readme src/index.ts --section API -q --parse-extension ts"
   },
   "peerDependencies": {},
   "husky": {
@@ -49,6 +50,7 @@
   ],
   "devDependencies": {
     "@size-limit/preset-small-lib": "^4.9.2",
+    "documentation": "^13.1.1",
     "husky": "^5.0.9",
     "size-limit": "^4.9.2",
     "tsdx": "^0.14.1",

@@ -39,6 +39,11 @@ type GetUserEvent = {
   data: User;
 };
 
+/**
+ * Get the current user of the Mini
+ * @name getUser
+ * @returns {Promise<User>}
+ */
 export async function getUser() {
   return new Promise<User>(resolve => {
     const sequence = Date.now();
@@ -62,6 +67,11 @@ type GetMembersEvent = {
   data: User[];
 };
 
+/**
+ * Get all of the users in a Soapbox room
+ * @name getMembers
+ * @returns {Promise<User[]>}
+ */
 export async function getMembers() {
   return new Promise<User[]>(resolve => {
     const sequence = Date.now();
@@ -85,6 +95,11 @@ type GetRoomEvent = {
   data: Room;
 };
 
+/**
+ * Get the details of the Soapbox room
+ * @name getRoom
+ * @returns {Promise<Room>}
+ */
 export async function getRoom() {
   return new Promise<Room>(resolve => {
     const sequence = Date.now();

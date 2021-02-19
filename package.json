@@ -3,6 +3,7 @@
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "description": "TypeScript SDK to build Soapbox Minis.",
   "files": [
     "dist",
     "src"

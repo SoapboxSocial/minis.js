@@ -2,8 +2,9 @@
 
 > TypeScript SDK to build Soapbox Minis.
 
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![npm version](https://img.shields.io/npm/v/@soapboxsocial/minis.js)](https://www.npmjs.org/package/@soapboxsocial/minis.js)
 [![bundlephobia](https://img.shields.io/bundlephobia/minzip/@soapboxsocial/minis.js)](https://bundlephobia.com/result?p=@soapboxsocial/minis.js@1.0.0)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 ## Table of Contents
 

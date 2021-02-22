@@ -1,5 +1,7 @@
 import mitt, { Handler } from 'mitt';
 
+declare var __DEV__: boolean;
+
 const emitter = mitt();
 
 if (typeof window !== 'undefined') {
@@ -51,6 +53,10 @@ export function getUser() {
     postMessage(WEBKIT_MESSAGE_HANDLERS.USER, { sequence });
 
     const handler: Handler<GetUserEvent> = event => {
+      if (__DEV__) {
+        console.log("Handling event 'getUser' with payload", event);
+      }
+
       if (event?.sequence === sequence) {
         resolve(event.data);
 
@@ -79,6 +85,10 @@ export function getMembers() {
     postMessage(WEBKIT_MESSAGE_HANDLERS.MEMBERS, { sequence });
 
     const handler: Handler<GetMembersEvent> = event => {
+      if (__DEV__) {
+        console.log("Handling event 'getMembers' with payload", event);
+      }
+
       if (event?.sequence === sequence) {
         resolve(event.data);
 
@@ -107,6 +117,10 @@ export function getRoom() {
     postMessage(WEBKIT_MESSAGE_HANDLERS.ROOM, { sequence });
 
     const handler: Handler<GetRoomEvent> = event => {
+      if (__DEV__) {
+        console.log("Handling event 'getRoom' with payload", event);
+      }
+
       if (event?.sequence === sequence) {
         resolve(event.data);
 

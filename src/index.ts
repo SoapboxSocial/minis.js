@@ -53,9 +53,9 @@ export function getUser() {
     const handler: Handler<GetUserEvent> = event => {
       if (event?.sequence === sequence) {
         resolve(event.data);
-      }
 
-      emitter.off(EVENT_NAMES.USER, handler);
+        emitter.off(EVENT_NAMES.USER, handler);
+      }
     };
 
     emitter.on(EVENT_NAMES.USER, handler);
@@ -81,9 +81,9 @@ export function getMembers() {
     const handler: Handler<GetMembersEvent> = event => {
       if (event?.sequence === sequence) {
         resolve(event.data);
-      }
 
-      emitter.off(EVENT_NAMES.MEMBERS, handler);
+        emitter.off(EVENT_NAMES.MEMBERS, handler);
+      }
     };
 
     emitter.on(EVENT_NAMES.MEMBERS, handler);
@@ -109,9 +109,9 @@ export function getRoom() {
     const handler: Handler<GetRoomEvent> = event => {
       if (event?.sequence === sequence) {
         resolve(event.data);
-      }
 
-      emitter.off(EVENT_NAMES.ROOM, handler);
+        emitter.off(EVENT_NAMES.ROOM, handler);
+      }
     };
 
     emitter.on(EVENT_NAMES.ROOM, handler);

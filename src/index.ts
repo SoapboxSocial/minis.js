@@ -25,7 +25,6 @@ export type User = {
   display_name: string;
   id: number;
   image: string;
-  username: string;
 };
 
 export type Room = {

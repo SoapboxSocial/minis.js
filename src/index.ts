@@ -28,7 +28,7 @@ export type User = {
 };
 
 export type Room = {
-  id: number;
+  id: string;
   name: string;
 };
 

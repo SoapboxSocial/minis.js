@@ -12,6 +12,7 @@ enum EVENT_NAMES {
   MEMBERS = 'members',
   ROOM = 'room',
   USER = 'user',
+  ROOM_CLOSED = 'room-closed',
 }
 
 enum WEBKIT_MESSAGE_HANDLERS {
@@ -130,4 +131,13 @@ export function getRoom() {
 
     emitter.on(EVENT_NAMES.ROOM, handler);
   });
+}
+
+/**
+ * Function to handle when a room is closed, can be used for app state cleanup.
+ * @name onRoomClosed
+ * @param callback {Function<void>}
+ */
+export function onRoomClosed(callback: () => void) {
+  emitter.on(EVENT_NAMES.ROOM_CLOSED, callback);
 }

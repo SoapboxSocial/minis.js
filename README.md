@@ -36,7 +36,7 @@ $ yarn add @soapboxsocial/minis.js
 - [getUser](#getuser)
 - [getMembers](#getmembers)
 - [getRoom](#getroom)
-- [onRoomClosed](#onroomclosed)
+- [onClose](#onclose)
   - [Parameters](#parameters)
 
 ### getUser
@@ -57,13 +57,13 @@ Get the details of the Soapbox room
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;Room>**
 
-### onRoomClosed
+### onClose
 
-Function to handle when a room is closed, can be used for app state cleanup.
+Function to handle when an app is closed, can be used for app state cleanup.
 
 #### Parameters
 
-- `callback` {Function<void>}
+- `callback` **[Function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)**
 
 ## Building a Mini
 

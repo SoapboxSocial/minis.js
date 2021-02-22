@@ -135,7 +135,7 @@ export function getRoom() {
 /**
  * Function to handle when an app is closed, can be used for app state cleanup.
  * @name onClose
- * @param callback
+ * @param {Function} callback
  */
 export function onClose(callback: () => void) {
   emitter.on(EVENT_NAMES.ON_CLOSE, callback);

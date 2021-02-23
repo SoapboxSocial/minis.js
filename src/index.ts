@@ -12,7 +12,7 @@ enum EVENT_NAMES {
   MEMBERS = 'members',
   ROOM = 'room',
   USER = 'user',
-  ON_CLOSE = 'on-close',
+  CLOSED = 'closed',
 }
 
 enum WEBKIT_MESSAGE_HANDLERS {
@@ -138,5 +138,5 @@ export function getRoom() {
  * @param {Function} callback
  */
 export function onClose(callback: () => void) {
-  emitter.on(EVENT_NAMES.ON_CLOSE, callback);
+  emitter.on(EVENT_NAMES.CLOSED, callback);
 }

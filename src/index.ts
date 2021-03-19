@@ -138,5 +138,15 @@ export function getRoom() {
  * @param {Function} callback
  */
 export function onClose(callback: () => void) {
-  emitter.on(EVENT_NAMES.CLOSED, callback);
+  const handler: Handler = event => {
+    if (__DEV__) {
+      console.log("Handling event 'onClose' with payload", event);
+    }
+
+    callback();
+
+    emitter.off(EVENT_NAMES.CLOSED, handler);
+  };
+
+  emitter.on(EVENT_NAMES.CLOSED, handler);
 }

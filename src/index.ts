@@ -23,6 +23,7 @@ enum WEBKIT_MESSAGE_HANDLERS {
 
 export type User = {
   display_name: string;
+  username: string;
   id: number;
   image: string;
 };
